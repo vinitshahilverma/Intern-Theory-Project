@@ -37,8 +37,8 @@ else
 }
 }
 
-// document.querySelector("#mobile").addEventListener("click",hideandshow)
+document.querySelector("#password").addEventListener("click",hideandshow)
 
-// function hideandshow(){
-//     if()
-// }
+function hideandshow(){
+    document.querySelector("#hide").style.display="block"
+}

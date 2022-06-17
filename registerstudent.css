@@ -2,15 +2,18 @@
     font-family: Roboto,Arial, Helvetica, sans-serif;
 }
 
-
+body{
+    background-color: #e7e7e7;
+}
 
 #container{
            
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    width: 40%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 35%;
     padding: 30px;  
     margin: auto;
     margin-top: 150px;
+    background-color: white;
 }
 form,select,label{
     width: 100%;
@@ -29,7 +32,7 @@ input[type="text"],input[type="number"],input[type="email"],input[type="password
     border: none;
     border-bottom: 2px solid #ccc;
     outline: none;
-    
+    font-size: 16px;
 
 }
  h2{
@@ -44,9 +47,10 @@ input[type="text"],input[type="number"],input[type="email"],input[type="password
     border: 0.5px solid red;
     color: red;
  }
- h3{
+ h5{
     font-weight: 100;
     color: #999999;
+    margin-top: -18px;
  }
  select{
     color: #999999;
@@ -55,3 +59,103 @@ input[type="text"],input[type="number"],input[type="email"],input[type="password
     font-weight: 10;
     text-decoration-line: none;
  }
+ #hide{
+    display: none;
+ }
+ h4{
+    font-weight: 100;
+ }
+ #facebook{
+
+    font-weight: 400;
+    width:100%;
+    height:45px;
+   /* margin: auto; */
+   margin-top: 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #4267b2;
+   border-radius: 8px;
+   /* line-height: 25px; */
+}
+#facebook>div,
+#google>div{
+   
+    color:white;
+    /* text-decoration: none;
+    color:white;
+    /* font-size: 14px;
+    font-weight: 600; 
+    width: 100px;   */ 
+
+}
+#google{
+
+   
+    width:100%;
+    height:45px;
+   /* margin: auto; */
+   margin-top: -5px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #087CDD;
+   border-radius: 8px;
+   /* line-height: 25px; */
+}
+#gap{
+    text-align: center;
+    margin-top: -15px;
+    font-size: 14px;
+    color:#999999;
+}
+#mid-text{
+    border:1.2px dotted red;
+    width:100%;
+    height:60px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    margin:auto;
+    margin-top: -15px;
+    padding: 5px;
+    background-color: #fceff1;
+    line-height: 20px;
+    color:#3c4858;
+}
+i{
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+    
+}
+#email:hover
+{
+    border-bottom: 2px solid #05569a;
+}
+#name:hover
+{
+ border-bottom: 2px solid #05569a;
+} 
+#password:hover
+{
+ border-bottom: 2px solid #05569a;
+}    
+#mobile:hover
+{
+ border-bottom: 2px solid #05569a;
+} 
+#city:hover{
+    border-bottom: 2px solid #05569a;
+}
+#peferences:hover{
+    border-bottom: 2px solid #05569a;
+} 
+#how:hover{
+    border-bottom: 2px solid #05569a;
+}    
+#looking:hover{
+    border-bottom: 2px solid #05569a;
+}             
+    
