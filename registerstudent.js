@@ -36,3 +36,9 @@ else
     return true
 }
 }
+
+// document.querySelector("#mobile").addEventListener("click",hideandshow)
+
+// function hideandshow(){
+//     if()
+// }
