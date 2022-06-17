@@ -13,6 +13,7 @@ event.preventDefault();
 let loginStudentObj={
 
       Email:document.querySelector("#email").value,
+    
       Password:document.querySelector("#password").value,
 
 }
@@ -22,7 +23,7 @@ let fleg=false;
 
 signUpStudent.forEach(function (elem) {
 
-    if (elem.email == loginStudentObj.Email && elem.password == loginStudentObj.Password) {
+    if (elem.email == loginStudentObj.Email && elem.password == loginStudentObj.Password||(elem.number == loginStudentObj.Email && elem.password == loginStudentObj.Password)) {
 
         fleg = true;
 
