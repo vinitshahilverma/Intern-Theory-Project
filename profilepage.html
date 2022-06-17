@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile page</title>
+    <title id="title"></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
 
 
@@ -535,22 +535,34 @@
     logindata.forEach(function (elem) {
 
         let profile = document.querySelector("#profile>h4");
-        profile.innerHTML = elem.name;
+        profile.innerText = elem.name;
 
         let email = document.querySelector("#profile>h3");
-        email.innerHTML = elem.email
+        email.innerText = elem.email
 
-
+        Title= document.querySelector("#title");
+        Title.innerText=elem.name+"Student Dashboard | Intern Theory interntheory.com"
 
         let number = document.querySelector("#profile>h3+h3");
-        number.innerHTML = elem.number;
-
-
-      
-
+        number.innerText= elem.number;
     })
 
-    alert("signIn successfully")
+
+
+    let verifyemail=document.querySelector("#header>p>a").addEventListener("click",verifyEmail);
+
+    function verifyEmail(){
+        alert("An email with verification has been sent to your email. Please follow the instructions to verfy it.")
+    }
+
+   
+    let verifynumber=document.querySelector("#header>p>a+a").addEventListener("click",verifyNumber);
+   
+    function verifyNumber(){
+alert("An OTP has been sent to your mobile phone. Please key in the OTP to verify your mobile")
+}
+
+    // alert("signIn successfully")
 
 
 
