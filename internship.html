@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #first{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(auto,1fr);
+        gap:20px;
+    border:1px solid gainsboro;
+        padding:20px 20px 20px 20px;
+        height:30px;
+
+
+     }
+     #second{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(1,200px);
+       
+      
+      
+        width:90%;
+        height:auto;
+        margin-left: 30px;
+       
+        padding-top: 50px;
+        padding-left: 50px;
+        background-color: rgb(249, 250, 252);
+      
+        
+     }
+     #second>div div{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(auto,200px);
+       border-top: 1px dashed gainsboro;
+       height:200px;
+       gap:20px;
+       padding-right: 10px;
+     }
+     #work{
+         width:60%;
+     }
+    
+    #work>img{
+        width:100%;
+        height: 100%;
+        
+    }
+     #second div>div>img{
+         width:110px;
+        padding-top: 20px;
+        padding-left: 10px;
+     }
+     #go{
+         height:20px;
+         width:190px;
+         color: blue;
+         background: none;
+         border: none;
+         font-size: 20px;
+     }
+     #second>div>div>div:last-child{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(3,50px);
+      
+        padding-left: 20px;
+        
+        align-items: center;
+     }
+     #gone>img{
+         width:50%;
+         height:100%;
+         background-color: white;
+     }
+     #gone{
+         border-radius: 50px;
+         background-color: white;
+         border:none
+
+     }
+     #second>div>div>div:last-child>h{
+         
+         text-align: center;
+
+     }
+     #second>div>div>div:nth-child(2)>h{
+         
+    
+        width:180px;}
+
+     
+       </style>
+      <body>
+         <div id="first" > <select id="cities">
+              <option value=" cities... ">cities.... </option>
+              <option value="Mumbai">mumbai</option>
+              <option value="Banglore">banglore</option>
+    <option value="Kolkata">chenei</option>
+    <option value="Delhi">Mumbai</option>
+    <option value="Noida">banglore</option>
+    <option value="Pune">chenei</option>
+    <option value="Kanpur">Mumbai</option>
+    <option value="Navi Mumbai">banglore</option>
+    <option value="Hydrabaad">chenei</option>
+    <option value="Gurgaon">Mumbai</option>
+    <option value="Chandigarh">banglore</option>
+    <option value="Ludhiyana">chennie</option>
+          </select>
+          
+        <select id="jobtype">
+
+        <option value="---">types...</option>
+            <option value="fulltime">Full time</option>
+            <option value="part-time">Part time</option>
+            <option value="home">work from home</option>
+        </select>
+       
+        <select id="courses"> 
+            <option value="  ">preferences.... </option>
+            <option value="admin">admin</option>
+            <option value="developer"> developer</option>
+          <option value="web "> web designer</option>
+          <option value="digital "> "digital marketing</option>
+        <option value="market"> marketing</option>
+        <input id=" space" placeholder="search..."/>
+
+    </select></div>
+    <form>
+<div id="second"><div>
+    <button id="work"> <img src="https://assets.interntheory.com/creative/Internship_left_course_add_01.png"> </button>
+</div></form>
+<div>
+<div>
+    <div> 
+        <img src="https://assets.interntheory.com/creative/logo.png">
+    </div>      
+      <div><h>Develop Your Skillset Online Skill Development Programs
+       
+         Taught by Industry Experts Internship 
+        Certified Courses
+         Guaranteed Internship Opportunities
+         Learn Industry-Demanded Skills </h></div>
+      <div>
+       
+        <h> 3 weeks left</h>
+        <button id="gone"> <img src="https://image.shutterstock.com/image-vector/share-icon-symbol-sign-vector-260nw-1907451394.jpg"> </button>
+        <button id="go" >Upgrade Skills</button></div> 
+    
+    </div>  
+
+
+    <div>
+        <div> 
+            <img src="https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg">
+
+        </div>      
+          <div> Sales Officer
+            Laugh Out Loud Ventures
+            
+            Part Time,Work From Home Internship
+            
+            Marketing
+            
+            Mumbai,Bangalore,Delhi ,
+            
+            Stipend: 3000 - 6000 per month</div>
+          <div>
+            <h> 3 weeks left</h>
+            <button id="gone"> <img src="https://image.shutterstock.com/image-vector/share-icon-symbol-sign-vector-260nw-1907451394.jpg"> </button>
+            <button id="go"> view and apply</button></div> 
+       
+        </div>  
+
+
+        <div>
+            <div> 
+                <img src="https://assets.interntheory.com/uploads/company/logos/dec6627e07033fe66229268586e8a1a11fca57ce.jpg">
+            </div>      
+              <div> 
+                IT Intern
+                St. Jude India Childcare Centres
+                
+                Full Time Internship
+                
+                Technology
+                
+                Mumbai
+                
+                Stipend: 5000 per month</div>
+              <div>
+                <h> 3 weeks left</h>
+                <button id="gone"> <img src="https://image.shutterstock.com/image-vector/share-icon-symbol-sign-vector-260nw-1907451394.jpg"> </button>
+                
+                <button id="go"> view and apply</button></div> 
+           
+              </div>
+
+
+</div></div>
+
+</body>
+
+       
+    
+
+     
+
+
+
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myFunction)
+    function myFunction(event){
+        event.preventDefault() 
+        let name=work.value
+
+        
+name=window.location.href="https://www.interntheory.com/courses?utm_source=internshipsleftman&utm_medium=webpage"
+
+
+        }
+    document.getElementById("go").addEventListener("Click",changeColor)
+    function changeColor(el){
+        event.preventDefault() 
+
+        let gh=go.value
+gh=window.location.href="https://www.interntheory.com/courses?utm_source=internshipslist&utm_medium=webpage"
+
+    }
+    document.getElementById("gone").addEventListener("Click",changColor)
+    function changColor(elem){
+        event.preventDefault() 
+
+        let gs=gone.value
+gs=window.location.href="https://www.facebook.com/"
+
+    }
+    </script>
