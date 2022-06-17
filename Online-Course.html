@@ -171,7 +171,7 @@ text-decoration: line-through;
 font-weight: 400;
 color: rgba(0, 0, 0, 0.54);">₹ 32999 </span>
  <button id="btn">EMI Starting at ₹ 915/month</button>
-<a href="" role="button" class="second" onclick="itstark(event)"><span id="addcart1">ADD TO CART</span></a>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
 <a href="" role="button" class="first"><span>KNOW MORE</span></a>
                 
 </div>
@@ -182,7 +182,7 @@ color: rgba(0, 0, 0, 0.54);">₹ 32999 </span>
 <h2>Digital Marketing Course</h2>
  <p>Learn the art of digital marketing. Sign up for this online ... </p>
                                          
-<span class="round" style="    font-size: 1.1rem;
+<span class="round" style="font-size: 1.1rem;
  font-weight: 700;
  padding-left: 3px;
 letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 5999</span> 
@@ -196,7 +196,7 @@ font-size: 0.775rem;
  ">₹ 11999</span>
                                
  <button id="btn">EMI Starting at ₹ 915/month</button>
-<a href="" role="button" class="second" onclick="itstark(event)"><span class="addcart">ADD TO CART</span></a>
+ <a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
 <a href="" role="button" class="first"><span>KNOW MORE</span></a>
  </div>
 <!-- 
@@ -219,7 +219,7 @@ letter-spacing: 0.01071em;
  font-size: 0.775rem; ">₹ 11999</span>
                                    
 <button id="btn">EMI Starting at ₹ 343/month</button>
- <a href="" role="button" class="second" onclick="itstark(event)"><span class="addcart">ADD TO CART</span></a>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
  <a href="" role="button" class="first"><span>KNOW MORE</span></a>
                                       
  </div>
@@ -244,7 +244,7 @@ color: rgba(0, 0, 0, 0.54);
 font-size: 0.775rem;">₹ 7999</span>
                                                   
 <button id="btn">EMI Starting at ₹ 229/month</button>
-<a href="" role="button" class="second" onclick="itstark(event)"><span class="addcart">ADD TO CART</span></a>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
  <a href="" role="button" class="first"><span>KNOW MORE</span></a>
                                                          
 </div>
@@ -268,7 +268,7 @@ letter-spacing: 0.01071em;
  font-size: 0.775rem;">₹ 7999</span>
                            
 <button id="btn">EMI Starting at ₹ 229/month</button>
-<a href="" role="button" class="second" onclick="itstark(event)"><span class="addcart">ADD TO CART</span></a>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
 <a href="" role="button" class="first"><span>KNOW MORE</span></a>
                               
        
@@ -294,7 +294,7 @@ color: rgba(0, 0, 0, 0.54);
 font-size: 0.775rem;">₹ 7999</span>
                                                         
 <button id="btn">EMI Starting at ₹ 229/month</button>
-<a href="" role="button" class="second" onclick="itstark(event)"><span class="addcart">ADD TO CART</span></a>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
 <a href="" role="button" class="first"><span>KNOW MORE</span></a>
                                                          
  </div>
@@ -322,7 +322,7 @@ font-size: 0.775rem;">₹ 5999</span>
                        
 <button id="btn">EMI Starting at ₹ 172/month</button>
 
-  <a href="" role="button" class="second" onclick="itstark(event)"><span class="addcart">ADD TO CART</span></a>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
   <a href="" role="button" class="first"><span>KNOW MORE</span></a>
                              
 </div>
@@ -348,43 +348,13 @@ color: rgba(0, 0, 0, 0.54);
 font-size: 0.775rem;">₹ 5999</span>
 
 <button id="btn">EMI Starting at ₹ 172/month</button>
-<a href="" role="button" class="second" onclick="itstark(event)"><span class="addcart">ADD TO CART</span></a>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
 <a href="" role="button" class="first"><span>KNOW MORE</span></a>
  </div>
-        
-</div>
+        </div>
     </div>
    </div>
-</body>
-
-<script>
-  function itstark(event){
-    event.preventDefault()
-  
-    let cart = {
-        name: "IT Starter Pack (4 Courses)",
-        xprice: 32999,
-        price: 15999
-    }
-    let arr;
-    arr = localStorage.getItem("cart");
-    
-    if (arr == null) {
-        arr = [];   
-    } else {
-        arr = JSON.parse(localStorage.getItem("cart"));
-    }
-    var itAdd = document.getElementsById("addcart1")
-    itAdd.textContent = "Checkout"
-
-    const found = arr.some(el => el.name === nam);
-    if (found) {
-        return;
-    }
-  }
-</script>
-
-
+   </body>
 </html>
 
 
