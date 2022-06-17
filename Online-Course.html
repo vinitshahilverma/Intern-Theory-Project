@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course</title>
+    <style>
+      *{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+        #Parent{
+            /* border: 3px solid orange; */
+            width: 80%;
+            margin: auto;
+           }
+      #one{
+            /* border: 1px solid red; */
+        }
+        #one>h2{
+            font-size: 1.3rem;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding: 0%;
+        }
+      #one>p{
+        font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.0075em;
+    color: slategray;
+    margin:0 0 3%;
+    padding: 0%;
+        }
+       
+        .image{
+            /* border: 1px solid black; */
+            width: 100%;
+      }
+       #grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+        .image > img{
+    background: cover;
+    border-radius: 5px;
+    height: 8.75rem;
+    width: 100%;
+        }
+        .second{
+    text-decoration: none;
+   border-radius:0.25rem;
+   padding:10PX 10PX;
+    min-width: 4rem;
+    font-size: 0.8125rem;
+    background-color: red;
+    color: white;
+    float: right;
+}
+.first{
+    text-decoration: none;
+   border-radius:0.25rem;
+   padding:0.25rem 0.5rem;
+    min-width: 4rem;
+    font-size: 0.8125rem;
+  color: blue;
+  float: right;
+}
+#btn{
+    color: orange;
+    border: 0px;
+    background-color: white;
+    margin-left: 35%;
+    margin-bottom: 10px;
+    
+}
+.round{
+    float: right;
+    margin-right: 10px;
+}
+body>div>img{
+  background-image: url("https://morguefile.nyc3.cdn.digitaloceanspaces.com/pub/nicusor/images/3/large/192c57f3-7605-4fb7-88b4-ddfdddcb2c95.1647953353.jpg");
+    width: 100%;
+    margin: auto;
+    margin-bottom: -20px;
+    margin-top: -20px;
+   
+
+}
+@media all and (min-width: 768px) and (max-width: 1024px){
+  #grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+        }
+}
+@media all and (min-width: 512px) and (max-width: 1024px) {
+  #grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 20px;
+        }
+    }
+       @media all and (min-width:320px) and (max-width: 512px) {
+        #grid{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(8,1fr);
+            gap: 20px;
+        }
+    }
+    #tag{
+      background-color: red;
+    color: white;
+    text-align: center;
+    padding-bottom: 2px;
+    }
+    #but{
+      background-color: rgb(229, 30, 30);
+    color: white;
+    border: 0px;
+    }
+
+    
+
+        
+    </style>
+</head>
+<body>
+  <div id="tag">
+  <p>Please Click Here<button id="but" onclick="alert('An email with verification has been sent to your email. Please follow the instructions to verfy it.')">
+    VERIFY EMAIL</button>& Click Here to <button id="but" onclick="alert('An OTP has been sent to your mobile phone. Please key in the OTP to verify your mobile.')">VERIFY NUMBER</button>
+  </p>
+</div>
+  <div>
+    <img src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png" alt="">
+   </div>
+<div id="Parent">
+
+
+
+<div id="one">
+<h2>Certified Online Courses</h2>
+<p>Upgrade your skills with Intern Theory's online learning platform.
+Enrol for any certified online courses and get a step ahead of
+competition. Select from a range of skill based online courses and
+kickstart your career.
+</p>
+</div>
+<div id="two">
+<div id="grid">
+  <!-- first image -->
+<div class="image">
+  <img src="https://assets.interntheory.com/creative/courses/thumbnails/it.jpg" height="140" alt="">
+<h2>IT Starter Pack (4 Courses)</h2>
+ <p>Learn the most demanded skills in the IT industry today. Sig ... </p>
+
+
+<span class="round" style="font-size: 1.1rem;
+font-weight: 700;
+ padding-left: 3px;
+letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+<span class="round" style="
+text-decoration: line-through;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.54);">₹ 32999 </span>
+ <button id="btn">EMI Starting at ₹ 915/month</button>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
+<a href="" role="button" class="first"><span>KNOW MORE</span></a>
+                
+</div>
+
+<!-- second image -->
+<div class="image">
+<img src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png" height="140" alt="">
+<h2>Digital Marketing Course</h2>
+ <p>Learn the art of digital marketing. Sign up for this online ... </p>
+                                         
+<span class="round" style="font-size: 1.1rem;
+ font-weight: 700;
+ padding-left: 3px;
+letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 5999</span> 
+ <span class="round"style="
+text-decoration: line-through;
+ font-weight: 400;
+ line-height: 1.5;
+letter-spacing: 0.01071em;
+ color: rgba(0, 0, 0, 0.54);
+font-size: 0.775rem;
+ ">₹ 11999</span>
+                               
+ <button id="btn">EMI Starting at ₹ 915/month</button>
+ <a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
+<a href="" role="button" class="first"><span>KNOW MORE</span></a>
+ </div>
+<!-- 
+ third image -->
+<div class="image">
+<img src="https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png" height="140" alt="">
+ <h2>Data Analytics With R Programming Course</h2>
+ <p>Learn data science online. Join this online data analytics c ...</p>                               
+                                        
+ <span class="round" style="    font-size: 1.1rem;
+ font-weight: 700;
+ padding-left: 3px;
+letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 5999</span> 
+ <span class="round" style="
+ text-decoration: line-through;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.01071em;
+ color: rgba(0, 0, 0, 0.54);
+ font-size: 0.775rem; ">₹ 11999</span>
+                                   
+<button id="btn">EMI Starting at ₹ 343/month</button>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
+ <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+                                      
+ </div>
+
+ <!-- four image -->
+<div class="image">
+ <img src="https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png" height="140" alt="">
+ <h2>Web Development Course</h2>
+<p>Learn the art of web design and web development. Join this o ... </p>
+                                                     
+                                                          
+<span class="round" style="    font-size: 1.1rem;
+font-weight: 700;
+padding-left: 3px;
+letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 3999</span> 
+<span class="round" style="
+text-decoration: line-through;
+ font-weight: 400;
+ line-height: 1.5;
+letter-spacing: 0.01071em;
+color: rgba(0, 0, 0, 0.54);
+font-size: 0.775rem;">₹ 7999</span>
+                                                  
+<button id="btn">EMI Starting at ₹ 229/month</button>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
+ <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+                                                         
+</div>
+
+<!-- five image -->
+<div class="image">
+<img src="https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png" height="140" alt="">
+ <h2>Tally + GST Course</h2>
+<p>Sign up for this online tally and gst course and learn how t ...</p>                                            
+                                
+ <span class="round" style="    font-size: 1.1rem;
+ font-weight: 700;
+padding-left: 3px;
+letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 3999</span> 
+<span class="round" style="
+ text-decoration: line-through;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.01071em;
+  color: rgba(0, 0, 0, 0.54);
+ font-size: 0.775rem;">₹ 7999</span>
+                           
+<button id="btn">EMI Starting at ₹ 229/month</button>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
+<a href="" role="button" class="first"><span>KNOW MORE</span></a>
+                              
+       
+</div>
+
+<!-- six image -->
+ <div class="image">
+ <img src="https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png" height="140" alt="">
+ <h2>Android App Development Using Kotlin Course</h2>
+ <p>Learn the art of android app design and web development. Joi ...</p>
+                                                  
+                                                            
+ <span class="round" style="    font-size: 1.1rem;
+ font-weight: 700;
+  padding-left: 3px;
+ letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 3999</span> 
+ <span class="round" style="
+ text-decoration: line-through;
+font-weight: 400;
+ line-height: 1.5;
+ letter-spacing: 0.01071em;
+color: rgba(0, 0, 0, 0.54);
+font-size: 0.775rem;">₹ 7999</span>
+                                                        
+<button id="btn">EMI Starting at ₹ 229/month</button>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
+<a href="" role="button" class="first"><span>KNOW MORE</span></a>
+                                                         
+ </div>
+
+ <!-- seven image -->
+
+<div class="image">
+<img src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png" height="140" alt="">
+<h2>Advanced Excel Course</h2>
+  <p>Master MS Excel. Take the online ms excel course and learn t ... </p>
+         
+                         
+ <span class="round" style="    font-size: 1.1rem;
+ font-weight: 700;
+ padding-left: 3px;
+ letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 2999</span>
+                                
+<span class="round" style="
+text-decoration: line-through;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.01071em;
+color: rgba(0, 0, 0, 0.54);
+font-size: 0.775rem;">₹ 5999</span> 
+                       
+<button id="btn">EMI Starting at ₹ 172/month</button>
+
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
+  <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+                             
+</div>
+  <div  class="image">
+
+    <!-- Eight image -->
+ <img src="https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png" height="140" alt="">
+                                    
+<h2>R Programming Course</h2>
+<p>Learn r programming online. Sign up for this online r progra ... </p>
+                               
+
+<span class="round" style="font-size: 1.1rem; 
+font-weight: 700;
+padding-left: 3px;
+letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 2999</span> 
+<span class="round" style="
+text-decoration: line-through;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.01071em;
+color: rgba(0, 0, 0, 0.54);
+font-size: 0.775rem;">₹ 5999</span>
+
+<button id="btn">EMI Starting at ₹ 172/month</button>
+<a href="loginstudent.html" role="button" class="second" >ADD TO CART</a>
+<a href="" role="button" class="first"><span>KNOW MORE</span></a>
+ </div>
+        </div>
+    </div>
+   </div>
+   </body>
+</html>
+
+
+
