@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto,helvetica,Arial, Helvetica, sans-serif;
+}
+
+
+
+#container{
+    
+    width: 30%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin: auto;
+    padding: 10px;
+   margin-top: 100px;
+}
+
+select{
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    border-top: 2px solid transparent;
+    padding: 5px;
+ 
+}
+    
+
+
+p{
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+ display: flex;
+ margin-top: 10px;
+ padding: 5px;
+ color: white ;
+ background-color: red;
+ border: none;
+ 
+}
