@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Time Internships</title>
+    <script src="https://kit.fontawesome.com/3e2211948f.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing:border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /*------------------------------ ------navbar-------------------------------------- */
+        #navigation{
+            display:flex;
+            width:100%;
+            height:64px;
+            background-color: white;
+            padding: 0px 24px 0 24px;
+            box-shadow: rgba(100, 100, 111,0.2) 0px 7px 29px 0px;
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top:0px;
+            z-index: 1;
+            
+        }
+        #father{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1471.2px;
+            height:48px;
+    
+        }
+        #father>div:first-child>img{
+                  width:41.03%;
+        }
+        #father>div:first-child{
+                display: grid;
+                align-items: center;
+                margin-left: 50px;
+        }
+        #father>div:last-child{
+                display: flex;
+                align-items: center;
+        }
+        #father>div:last-child img{
+            width:24px;
+            height:24px;
+            margin-right:28px;
+        }
+        button{
+            width:84.05px;
+            height:36.5px;
+            background-color: #DF1E2E;
+           color: white;
+           /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+           font-weight:550;
+           font-size: 14px;
+           border-radius: 5px;
+           border: none;
+        }
+
+        /* ----------------sidemenu------------------------ */
+
+        #warp{
+            height:100%;
+            width:283.2px;
+            position:fixed;
+            left: 0px;
+            z-index:2;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: #fff;
+            transition: 0.2s ease;
+            transform: translateX(-283.2px);
+            font-weight: 700;
+        }
+        ul li{
+            list-style:none;
+        }
+        ul li a{
+            color: #011a41;
+            padding: 5px 0px;
+            margin-top: 22px;
+            display:block;
+            text-transform: capitalize;
+            text-decoration: none;
+            transition:0.2s ease-out;
+            
+        }
+ 
+        ul li a i{
+            width:60px;
+            text-align: center;
+        }
+        .inbuilt>li>a{
+            margin-left:70px;
+            margin-top: -10px;
+        }
+        .cour{
+            margin-bottom: 20px;
+        }
+        #checkbox{
+            display:none;
+            visibility: hidden;
+            -webkit-appearance: none;
+        }
+        #warp>ul>li:first-child>a{
+            margin-top: 20px;
+        }
+        #toggle{
+            position:fixed;
+            height:30px;
+            width:30px;
+            top:20px;
+            left:15px;
+            z-index: 1;
+            cursor: pointer;
+            border-radius: 2px;
+            background-color: #fff;
+        }
+        #toggle span{
+            position:absolute;
+            height:2px;
+            width:18px;
+            background-color: black;
+            border-radius: 50px;
+            transition:0.3s ease;
+        }
+        #top_line{
+            top:30%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        #mid_line{
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        #bottom_line{
+            top:70%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        #checkbox:checked ~ #warp{
+            transform: translateX(0);
+        }
+        ul li span{
+            position:absolute;
+            right:30px;
+        
+        }
+        /* <-------------------------------------------------------------------------> */
+         /* <-------------------footer------------------->    */
+      #footer{
+        width:100%;
+        height:341.75px;
+        background-color: #446478;
+        padding: 30.375px 151.913px;
+        color: white;
+        font-size: 14px;
+      }
+      #insideFooter{
+        height:auto;
+        display: flex;
+        margin:auto;
+      }
+      #insideFooter>div:first-child{
+           height:120px;
+           margin-top: 30px;
+           width: 10%;
+          
+          display: grid;
+          justify-content: center;
+          align-items: center;
+      }
+      #insideFooter>div:last-child{
+           height: 90%;
+           width: 90%;
+           
+      }
+      
+      #insideFooter>div:first-child>div>a>img{
+        width:20%;
+        margin-bottom:50px;
+        display:block;
+        margin:auto;
+      }
+      #table{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+      tr,td{
+        height:25px;
+        width:300px;
+      }
+      td>a{
+        color:white;
+        text-decoration: none;
+      }
+      thead>tr>td{
+        border-bottom: 1px solid;
+      }
+      #bottom{
+        width:100%;
+        height:100px;
+        margin: auto;
+      }
+      #bottom>div{
+        width:100%;
+        margin: auto;
+        height:50px;
+      }
+      #bchild1{
+        display: flex;
+        justify-content:space-evenly;
+        align-items:flex-end;
+        border-bottom: 1px solid;
+      }
+      #bchild2{
+        display: flex;
+        justify-content:center ;
+      }
+     #bchild2>div{
+        margin-top:5px;
+     }
+     #bchild1>div:first-child{
+        margin-left:-30px;
+     }
+     #bchild1>div:last-child{
+        margin-right:-30px;
+     }
+     #bchild1 p {
+        padding-bottom: 5px;
+     }
+/* <--------------------------------------------------------------------------------------------------> */
+    #grandfather{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #grandfather>img{
+        width:295.66px;
+        height:295.66px;
+        margin-left: 150px;
+        margin-right: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    }
+    #father1{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width:60%;
+        height:auto;
+    }
+    #father1>div{
+        padding-top: 30px;
+        padding-left:20px;
+    }
+    h2{
+        font-weight: 100;
+        margin-left: 10px;
+    }
+    .job{
+        display: flex;
+        width:95%;
+        margin: auto;
+        font-size: 14px;
+        padding-bottom: 10px;
+        border-bottom: 2px dashed grey;
+       
+    }
+    .job>div>img{
+        width:45%; 
+        display: block;
+       
+    }
+    .job>div:first-child{
+        
+        width:25%;
+           /* margin-left: 10px; */
+    }
+    .job>div:nth-child(2){
+        /* position: sticky; */
+        margin-left: -80px;
+    }
+    .job>div:last-child{
+       position: absolute;
+       right:170px;
+        text-align: right;
+    }
+    .job>div:last-child>div:first-child{
+        margin-bottom: 37px;
+    }
+    .job>div:last-child>div:nth-child(2){
+        margin-bottom: 33px;
+    }
+    .job>div:nth-child(2)>div{
+        margin-bottom: 5px;
+    }
+    .job h2{
+       margin-left: 0px;
+    }
+    i{
+        color: black;
+    }
+    .job>div:last-child>div:last-child>a{
+      text-decoration: none;
+    }
+    .job>div:nth-child(2)>div:nth-child(3){
+            color:grey;
+        }
+        .job>div:nth-child(2)>div:nth-child(4){
+            color:grey;
+        }
+        .job>div:nth-child(2)>div:nth-child(5){
+            color:grey;
+        }
+        .job>div:nth-child(3)>div:nth-child(3)>a{
+            color:#087CDD;
+        }
+    #seemore{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+  /* <----------------------------------------------------------------------------------------------------------------------------------------> */
+  @media all and (min-width:866px) and (max-width:1024px) {
+        #grandfather>img{
+            margin-left:10px;
+            width:200px;
+            height:200px
+        }
+        .job>div:nth-child(2){
+            /* position: sticky; */
+            margin-left: -50px;
+        }
+       }
+       @media all and (min-width:400px) and (max-width:865px) {
+        #grandfather>img{
+            display:none;
+        }
+        #father1{
+            width:95%;
+            margin-left: 20px;
+        }
+       }
+       /* <----------------------------------------------------------media queary for footer-----------------------------------> */
+     @media all and (min-width:300px) and (max-width:940px)  {
+        #insideFooter{
+           display: none;
+        }
+        #bchild1{
+            display: none;
+        }
+        #footer{
+            height:80px;
+        }
+     }
+</style>
+</head>
+<body>
+    <!-- ......navbar...... -->
+    <div id="navigation">
+        <div id="father">
+         <div>
+            <img src="https://assets.interntheory.com/creative/logo.png" alt="logo">
+         </div>
+         <div>
+            <a href="cart.html"><img src="https://t2.gstatic.com/images?q=tbn:ANd9GcTjrHlkYmgAQKRZr3tHn13CYNox3hay2bcb4dUP22cVVDfNaoXJ" alt="cart"></a>
+            <a href="loginstudent.html"><button>SIGN IN</button></a>
+            </div>
+         </div>
+        </div>
+    </div>
+    <!-- <----------------------------------------------------------------------->
+     <!-- .......sidebar.... -->
+     <label>
+        <input id="checkbox" type="checkbox">
+        <div id="toggle">
+            <span id="top_line" ></span>
+            <span id="mid_line" ></span>
+            <span id="bottom_line"></span>
+        </div>
+        <div id="warp">
+                <ul>
+                  <li><a href="homepage.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                  <li><a href="internship.html"><i class="fa-solid fa-list"></i>InternShips</a></li>
+                  <li><a href="job.html"><i class="fa-solid fa-bag-shopping"></i>Jobs</a></li>
+                  <li><a href="loginstudent.html"><i class="fa-solid fa-bars-staggered"></i>Post Internship</a></li>
+                  <li><a href="#" id="hide1"><i class="fa-solid fa-book-bookmark"></i>Courses<span class="fa-solid fa-angle-down"></span>
+                      <ul id="verma1" class="inbuilt">
+                          <li><a href="Online-Course.html" class="cour">Online Courses</a></li>
+                          <li><a href="#">Classroom Training</a></li>
+                      </ul>
+                  </a></li>
+                  <li><a href="contactus.html" ><i class="fa-solid fa-phone" ></i>contact Us</a></li>
+                  <li><a href="#" id="hide2"><i class="fa-solid fa-chart-simple"></i>Register<span class="fa-solid fa-angle-down"></span>
+                      <ul id="verma2" class="inbuilt">
+                          <li><a href="registercompany.html" class="cour">Company</a></li>
+                          <li><a href="registerstudent.html">Student</a></li>
+                      </ul>
+                  </a></li>
+                  <li><a href="#" id="hide3"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login<span class="fa-solid fa-angle-down"></span>
+                      <ul id="verma3" class="inbuilt">
+                          <li><a href="logincompany.html" class="cour">Company</a></li>
+                          <li><a href="loginstudent.html">Student</a></li>
+                        </ul>
+                    </a></li>
+                </ul>
+            </div> 
+        </label>   
+    
+    <!-- ..................... -->
+    <div id="grandfather">
+        <img src="https://assets.interntheory.com/creative/Internship_left_course_add_01.png" alt="error">
+        <div id="father1">
+            <div><h2>Full Time Internships</h2></div>
+            <div class="job">
+                 <div><img src="https://assets.interntheory.com/creative/logo.png" alt="logo"></div>
+                 <div>
+                    <div><h2>Develop Your Skillset</h2></div>
+                    <div>Online Skill Development Programs</div>
+                    <div>Taught by Industry Experts Internship</div>
+                    <div>Certified Courses</div>
+                    <div style="color:grey">Guaranteed Internship Opportunities</div>
+                    <div>Learn Industry-Demanded Skills</div>
+                 </div>
+                 <div>
+                    <div>4-6 Weeks</div>
+                    <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+                    <div><a href="Online-Course.html">UPGRADE SKILLS</a></div>
+                 </div>
+            </div>
+            
+            <div class="job">
+                <div ><img src="https://assets.interntheory.com/uploads/company/companylogos/be02b6cd79b216cc36903d48ee57bf3d0cd57886/9b967ae30bee37de14cc21840db0613b5dd52aadcom.jpg" alt="logo"></div>
+                <div>
+                   <div><h2>Event Management and Marketing</h2></div>
+                   <div>Partystarters</div>
+                   <div>Full Time Internship</div>
+                   <div>Event Management</div>
+                   <div>Mumbai</div>
+                   <div>Stipend: 2500 - 5000 per month</div>
+                </div>
+                <div>
+                   <div>3 weeks left</div>
+                   <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+                   <div><a href="#">VIEW AND APPLY</a></div>
+                </div>
+           </div>
+           <div class="job">
+            <div ><img src="https://assets.interntheory.com/uploads/company/logos/bdcbf6704bbfbf34d0705fe83d64540e7e2a1a57.jpg" alt="logo"></div>
+            <div>
+               <div><h2>Operations & Backoffice</h2></div>
+               <div>Employee crossings</div>
+               <div>Full Time Internship</div>
+               <div>Data Entry</div>
+               <div>Thane</div>
+               <div>Stipend: 10000 per month</div>
+            </div>
+            <div>
+               <div>3 weeks left</div>
+               <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+               <div><a href="#">VIEW AND APPLY</a></div>
+            </div>
+       </div>
+       <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/logos/6c0a3b959003ddb8e782d29244401adfea28a06d.jpg" alt="logo"></div>
+        <div>
+           <div><h2>Social Media Intern - Instagram</h2></div>
+           <div>Gokrazee Innovations Private Limited</div>
+           <div>Full Time Internship</div>
+           <div>Social Media</div>
+           <div>Mumbai,Delhi,Kolkata</div>
+           <div>Stipend: 5000 per month</div>
+        </div>
+        <div>
+           <div>2 weeks left</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+      </div>
+    
+      <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/logos/eaa8b3215ca12ea7071c6a90ac15c3f9bfc82f7e.jpg" alt="logo"></div>
+        <div>
+           <div><h2>Campus Ambassador</h2></div>
+           <div>Quirky Writers Media</div>
+           <div>Full Time Internship</div>
+           <div>Campus Ambassador</div>
+           <div>Mumbai</div>
+           <div>Stipend: None</div>
+        </div>
+        <div>
+           <div>2 weeks left</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+      </div>
+      <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/logos/958387b9860bb4701a0a4596a6821b4607624153.jpg" alt="logo"></div>
+        <div>
+           <div><h2>BUSINESS DEV EXE Intern</h2></div>
+           <div>Sailani Tours N Travel</div>
+           <div>Full Time Internship</div>
+           <div>Hospitality</div>
+           <div>Mumbai,Kolkata</div>
+           <div>Stipend: 5000 per month</div>
+        </div>
+        <div>
+           <div>2 weeks left</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+      </div>
+      <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/companylogos/34c2fed3559223e585b743e139a9f08d707bf2e1/a1c234859838d88dc45961f9322429f636874ce2com.png" alt="logo"></div>
+        <div>
+           <div><h2>Business Development Intern</h2></div>
+           <div>Savage & Palmer</div>
+           <div>Full Time Internship</div>
+           <div>Business Development</div>
+           <div>Mumbai</div>
+           <div>Stipend: 3000 per month</div>
+        </div>
+        <div>
+           <div>1 week</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+      </div>
+      <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/companylogos/34c2fed3559223e585b743e139a9f08d707bf2e1/a1c234859838d88dc45961f9322429f636874ce2com.png" alt="logo"></div>
+        <div>
+           <div><h2>Human Resource - Intern</h2></div>
+           <div>Savage & Palmer</div>
+           <div>Full Time Internship</div>
+           <div>Human Resources</div>
+           <div>Mumbai</div>
+           <div>Stipend: 5000 per month</div>
+        </div>
+        <div>
+           <div>1 week</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+      </div>
+      <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg" alt="logo"></div>
+        <div>
+           <div><h2>Marketing Ambassador - Work from Home</h2></div>
+           <div>Laugh Out Loud Ventures</div>
+           <div>Full Time Internship</div>
+           <div>Marketing</div>
+           <div>Bangalore,Chennai,Delhi</div>
+           <div>Stipend: 3000 - 10000 per month</div>
+        </div>
+        <div>
+           <div>1 week</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+      </div>
+      <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/logos/4ae8e1ff9f5f980214d63e40c406cff12251dd08.jpg" alt="logo"></div>
+        <div>
+           <div><h2>Social Media Marketing</h2></div>
+           <div>VEECORP Solutions Private Limited</div>
+           <div>Full Time Internship</div>
+           <div>Social Media</div>
+           <div>Mumbai,Delhi,Bangalore</div>
+           <div>Stipend: 5000 per month</div>
+        </div>
+        <div>
+           <div>1 week</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+      </div>
+      <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/logos/5b621fb7ef16c6476d7896e5f84ef92f464fc226.jpg" alt="logo"></div>
+        <div>
+           <div><h2>Operations Intern</h2></div>
+           <div>Inscite Advisory Services LLP</div>
+           <div>Full Time Internship</div>
+           <div>Operations</div>
+           <div>Mumbai</div>
+           <div>Stipend: 4000 per month</div>
+        </div>
+        <div>
+           <div>4 days left</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+      </div>
+      <div id="seemore">
+        End of search results.
+      </div>
+        </div>
+       </div>
+
+        <!-- <-------------------------footer---------------------- <a id="facebook"><i class="fa-brands fa-facebook-square"></i></a> -->
+
+    <div id="footer">
+        <div id="insideFooter">
+           <div>
+              <div>
+                 <a href="https://www.facebook.com/interntheory"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBZtvri3gY6yZyRDmjC8VA7QtJhZzVTbuTA&usqp=CAU" alt="facebook"></a> 
+              </div>
+              <div>
+                  <a href="https://www.linkedin.com/company/interntheory"><img src="data:image/png;base64,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" alt="linkdin"></a>
+              </div>
+              <div>
+                 <a href="https://twitter.com/InternTheory"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_gZjVSq5-da3Q8GKu63xygqQ6E6Dp2hqldg&usqp=CAU" alt="twitter"></a> 
+              </div>
+              <div>
+                 <a href="https://www.instagram.com/interntheory/"><img src="data:image/png;base64,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" alt="instagram"></a> 
+              </div>
+           </div>
+           <div id="table">
+              <div id="tchild1">
+                  <table>
+                      <thead>
+                          <tr>
+                              <td>BY PLACE</td>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr><td><a href="Internships-In-Mumbai.html">Internships In Mumbai</a></td></tr>
+                          <tr><td><a href="Internships-In-Delhi.html">Internships In Delhi</a></td></tr>
+                          <tr><td><a href="Internships-In-Bangalore.html">Internships In Bangalore</a></td></tr>
+                          <tr><td><a href="Internships-In-Pune.html">Internships In Pune</a></td></tr>
+                          <tr><td><a href="Internships-In-Hyderabad.html">Internships In Hyderabad</a></td></tr>
+                      </tbody>
+                  </table>
+                  </div>
+                  <div id="tchild2">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <td>BY PROFILE</td>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr><td><a href="Marketing-Internships.html">Marketing Internships</a></td></tr>
+                              <tr><td><a href="Business-Development-Internships.html">Business Development Internships</a></td></tr>
+                              <tr><td><a href="Content-Writing-Internships.html">Content Writing Internships</a></td></tr>
+                              <tr><td><a href="Graphic-Designing-Internships.html">Graphic Designing Internships</a></td></tr>
+                              <tr><td><a href="HR-Internships.html">HR Internships</a></td></tr>
+                              <tr><td><a href="Engineering-Internships.html">Engineering Internships</a></td></tr>
+                          </tbody>
+                      </table>
+                      </div>
+                      <div id="tchild3">
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <td>BY TYPE</td>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr><td><a href="Full-Time-Internships.html">Full Time Internships</a></td></tr>
+                                  <tr><td><a href="Part-Time-Internships.html">Part Time Internships</a></td></tr>
+                                  <tr><td><a href="Work-From-Home-Internships.html">Work From Home Internships</a></td></tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+              <div id="bottom">
+                  <div id="bchild1">
+                      <div><p>REFUND & CANCELLATION POLICY</p></div>
+                      <div><p>COURSES</p></div>
+                      <div><p>TERMS AND CONDITIONS</p></div>
+                      <div><p>PRIVACY POLICY</p></div>
+                      <div><p>CONTACT US</p></div>
+                      <div><p>ABOUT US</p></div>
+                      <div><p>SITEMAP</p></div>
+                  </div>
+                  <div id="bchild2">
+                      <div><p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p></div>
+                  </div>
+              </div>
+           </div>
+        </div>
+  </div>
+  <!-- <------------------------------------------------------------------------------------------------------------------------->
+</body>
+</html>
+
+<script>
+    // <---------------------------script for side menu-------------------------------->
+    document.querySelector("#verma1").style.display="none";
+    document.querySelector("#hide1").addEventListener("click",myFunction);
+     let count=0;
+    function myFunction(){
+        count++
+        if(count%2!==0){document.querySelector("#verma1").style.display="inline"}
+        else{document.querySelector("#verma1").style.display="none"}
+    }
+    
+
+    document.querySelector("#verma2").style.display="none";
+    document.querySelector("#hide2").addEventListener("click",myFunction1);
+     let count1=0;
+    function myFunction1(){
+        count1++
+        if(count1%2!==0){document.querySelector("#verma2").style.display="inline"}
+        else{document.querySelector("#verma2").style.display="none"}
+    }
+
+    document.querySelector("#verma3").style.display="none";
+    document.querySelector("#hide3").addEventListener("click",myFunction2);
+     let count2=0;
+    function myFunction2(){
+        count2++
+        if(count2%2!==0){document.querySelector("#verma3").style.display="inline"}
+        else{document.querySelector("#verma3").style.display="none"}
+    }
+</script>
