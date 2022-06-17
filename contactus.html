@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        #big{
+            display: flex;
+            
+            width: 90%;
+            height:500px;
+            margin: auto;
+        }
+        #big>div{
+            
+            width: 50%;
+            margin-right: 20px;
+
+        }
+        #big>div:first-child{
+            display: grid;
+            grid-row: 30% repeat(5 20%);
+            grid-column: 90%;
+            gap: 20px;
+        }
+        
+        h1{
+            margin-top: -20px;
+            font-size: 60px;
+        }
+        #big>div:first-child>div>p{
+            margin-top: -40px;
+            font-size: 20px;
+        }
+        input{
+            width: 100%;
+            height: 100%;
+            border: transparent;
+            border-bottom: 0.5px solid;
+            
+            
+            
+        
+        
+        }
+        #big>div:first-child>div:nth-child(5)>{
+            height: 30%;
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            height: 40px;
+            
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            
+          border: transparent;
+          width: 100px;
+            
+            font-size: 18px;
+            margin: auto;
+           
+        }
+        button:hover{
+            background-color: #b71c1c;
+        }
+       
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="big">
+        <div>
+            <div>
+                <h1>
+                    Contact
+                </h1>
+                <p>
+                    Have something to say? Give us a holler through any one of the ways below, and we’ll get back within 24 hours. On a side note, like the rest around us, we have fallen victims to Social Media. Feel free to get in touch on Facebook, LinkedIn or Instagram anytime!
+                </p>
+            </div>
+            <div>
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div>
+                <input type="number" placeholder="Number">
+            </div>
+            <div>
+                <input type="text" placeholder="Subject">
+            </div>
+            <div>
+                <input type="text" placeholder="Massage">
+            </div>
+            <div>
+                <button>
+                    <p>
+                        Submit
+                    </p>
+
+                </button>
+                
+            </div>
+        </div>
+        <div>
+            <img src="https://www.google.com/maps/d/thumbnail?mid=1IEVwjHNKZcYI5LKHZfRSFXEKyzg" alt="">
+        </div>
+  
+    </div>
+   
+</body>
+</html>
