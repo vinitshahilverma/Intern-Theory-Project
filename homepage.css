@@ -1,0 +1,352 @@
+*{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.dropdown-check-list {
+    display: inline-block;
+  }
+  
+  .dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px 5px 30px ;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+  .dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+  }
+  
+  .dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .dropdown-check-list ul.items li {
+    list-style: none;
+  }
+  
+  .dropdown-check-list.visible .anchor {
+    color: #0094ff;
+  }
+  
+  .dropdown-check-list.visible .items {
+    display: block;
+  }
+  #form-div{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background-color:RGB(216, 219, 221);
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  button{
+    background-color: red;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #main{
+    height: 400px;
+    width: 100%;
+    border: 1px solid rgb(241, 241, 245); 
+    margin: auto;
+    width: 100%;
+    background-image: url('https://cdn.awave.se/wp-content/uploads/sites/3/2021/05/MicrosoftTeams-image-3-700x468.jpg');
+    opacity: 0.7;
+    
+    
+    /* background: rgb(6, 24, 36); */
+  }
+   #heading{
+    
+    height:50px;
+    width:100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row: auto;
+    margin-top: 80px;
+    color: white;
+   }
+   .ready>h1{
+    background-color: red;
+    color: white;
+    width: 15%;
+    text-align: center;
+   }
+   .h1{
+    text-align: right;
+    margin-right: 10px;
+   }
+   .para{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+   }
+   /* *************second div******************** */
+   .red{
+    color: red;
+   }
+   #second-div{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 40px;
+    background-color: RGB(255, 255, 255);
+   }
+
+   .child1>h2{
+    margin-top: 110px;
+    font-size: 27px;
+    color:rgba(0, 0, 0, 0.87);
+    margin-bottom: 0;
+    line-height: 37px;
+   }
+   .child1>p{
+    margin-top: 0;
+    color: rgb(78, 77, 77);
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 110px;
+   }
+   .child2{
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   }
+   .child1{
+    margin-right: 10px;
+   }
+   /* ****work experience** */
+   .work_exp_main{
+    width: 100%;
+    background: rgb(247, 252, 254);
+    /* border: 1px solid; */
+    margin-bottom: 100px;
+    background-color: RGB(247, 252, 254);
+    padding-top: 30px;
+   }
+    .wem_h2  {
+    font-size: 32px;
+   text-align: center;
+   margin-top: 70px;
+   }
+   .wem_div{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+   }
+   .wem_div>div{
+    width: 100%;
+   }
+   .wem_div>div>img{
+    max-height: 180px;
+    max-width: 256px;
+   }
+   .skill-main{
+    height: 380px;
+    width: 100%;
+   margin: auto;
+   padding-top: 20px;
+    background-color: RGB(238, 238, 238);
+   }
+.skill-h2{
+  font-size: 32px;
+   text-align: center;
+   margin-top: 70px;
+   
+  }
+  .skill-card{
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    color: white;
+   background: rgb(238, 238, 238);
+  }
+  .skill-card>div:nth-child(1){
+    background: url(https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg) center center / cover;
+    overflow: hidden;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    height: 180px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+    
+    
+  }
+  .skill-card>div:nth-child(2){
+   background: url(https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg) center center / cover;
+    overflow: hidden;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    height: 180px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .skill-card>div:nth-child(3){
+    background: url(https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg) center center / cover;
+    overflow: hidden;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    height: 180px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* ***** Tree structure**** **********************************************/
+.tree-main{
+  width: 80%;
+  height: 400px;
+   margin: auto;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content:end;
+ 
+ background-color: RGB(255, 255, 255);
+}
+
+.tree-img{
+  width: 60%;
+  height:100%;
+}
+.tree-main>div:last-child>h1{
+font-weight:bold;
+margin-bottom: -5px;
+word-spacing:5px;
+font-size:27px;
+color: rgb(20, 20, 20);
+}
+.tree-main>div:last-child>p{
+font-style:normal ;
+color: rgb(73, 72, 72);
+font-size:15px;
+line-height:20px;
+}
+.tree-main>div:first-child{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+/* *******slide show******************* */
+.caruser-main{
+  background-color: #eeeeee;
+  height: 200;
+  padding: 50px;
+}
+.caruser{
+  width: 70%;
+  height: 180px;
+  /* border: 1px solid black; */
+  box-shadow: RGB(255, 255, 255);
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat(3,1fr) ;
+  grid-template-rows:repeat(1,200px);
+  grid-template-areas: 
+  "a b b" ;
+  align-items: center;
+  justify-content: center;
+ border-radius: 0px 20px 0px 20px;
+ background-color: white;
+}
+.caruser>div{
+  
+  padding: 10px;
+}
+.caruser>div:nth-child(1){
+  grid-area: a;
+  border-right: 1px solid rgb(192, 188, 188);
+  height: 50%;
+  /* padding: 30px; */
+  text-align: center;
+}
+.caruser>div:nth-child(2){
+  grid-area: b;
+}
+.caruser>div:nth-child(3){
+  grid-area: c;
+}
+.caruser-main img{
+  /* margin-top: 10px; */
+  margin-bottom: -10px;
+  border-radius: 50%;
+  
+}
+#p1{
+ color: rgb(27, 156, 231);
+ font-weight: bold;
+}
+.name{
+  margin-bottom: -10px;
+}
+.caruser-main p{
+  font-size: 15px;
+  line-height: 20px;
+  font-style: italic;
+  color: rgb(59, 57, 57);
+}
