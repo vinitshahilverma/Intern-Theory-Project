@@ -12,6 +12,8 @@
   display: grid;
   justify-content: flex-start;
   position: sticky;
+  top: 500px;
+  left: 5px;
 
 
 }
@@ -32,6 +34,9 @@
     margin-top: -20;
     text-align: left;
 
+}
+a{
+   text-decoration-line: none;
 }
 #container{
    width: 100%;
@@ -57,7 +62,7 @@ input[type="text"],input[type="number"],input[type="email"],input[type="password
    border-top: 2px solid transparent;
 }
 #container>div>div{
-   border: 1px solid black;
+ 
   margin: auto;
   margin-top: 30px;
    width: 60%;
@@ -84,7 +89,7 @@ input[type="text"],input[type="number"],input[type="email"],input[type="password
    justify-content: center;
 }
 p+div{
-   border: 1px solid red;
+  
    display: grid;
    grid-template-columns: repeat(2,1fr);
    grid-template-rows: repeat(2,auto);
@@ -122,11 +127,11 @@ span{
   margin-top: 20px;
 }
 #help>div>div{
-   border: 1px solid red;
+  
 
 }
 #icons{
-   border: 1px solid black;
+  
    display: grid;
    grid-template-columns: repeat(4,1fr);
    grid-template-rows: repeat(5,70px);
@@ -141,7 +146,7 @@ span{
       width: 350px;
    }
    #container>div:nth-child(1)>div{
-      border: 1px solid blue;
+      
      margin: auto;
      margin-top: 200px;
       width: 60%;
@@ -165,7 +170,7 @@ span{
      grid-template-rows: repeat(4,auto);
    }  
    p+div{
-      border: 1px solid red;
+    
       display: grid;
       grid-template-columns: repeat(1,1fr);
       grid-template-rows: repeat(4,auto);
@@ -173,7 +178,7 @@ span{
       
    }
    #help>div{
-      border: 1px solid black;
+     
      display: grid;
      grid-template-columns: repeat(1,1fr);
      grid-template-rows: repeat(3,250px);

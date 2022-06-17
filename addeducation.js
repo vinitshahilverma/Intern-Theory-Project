@@ -18,6 +18,7 @@ function studentFun(event){
 
       localStorage.setItem("educationdata",JSON.stringify(education))
       alert("Registration Successfull")  
+      window.location.href="loginstudent.html"
     }
     
 }
