@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 500;
+
+        }
+        /* body{
+            background-color: #f8f8f8;
+        } */
+      
+
+        /* <------------------ css for header ------------------> */
+        #header {
+
+            width: 100%;
+            height: 30px;
+            margin-top: 70px;
+            background-color: #df1e2e;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+
+        }
+
+        #header>p {
+
+            font-size: 14px;
+            font-weight: 400;
+
+        }
+
+        #header>p>a {
+
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+
+        }
+
+
+        /* <------------------ css for profile ------------------> */
+        #profile {
+
+            width: 20%;
+            height: 350px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        
+        }
+
+        #profile>img {
+
+            display: block;
+            margin: auto;
+            width: 40%;
+            height: 130px;
+            margin-top: 20px;
+        }
+
+        #profile>button {
+            display: block;
+            border: none;
+            margin: auto;
+            margin-top: -8px;
+            background-color: #087cdd;
+            padding: 4px;
+            border-radius: 4px;
+
+        }
+
+        #profile>button>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #profile>h4 {
+            margin-top: 8px;
+            text-align: center;
+            color: rgb(153, 153, 153);
+            font-weight: 400;
+        }
+
+        #profile>h3 {
+            margin-top: 14px;
+            line-height: 20px;
+          margin-left: 30px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #3c4858;
+        }
+
+        #profile>hr {
+
+            margin: 16px 25px 10px 25px;
+        }
+
+        /* <------------------ css for sidebartop ------------------> */
+
+        #sidebar {
+           
+            display: grid;
+            grid-template-columns: 850px;
+            grid-template-rows: 70px 250px 350px;
+            gap: 20px;
+        
+           
+           
+        }
+
+        #sidebar>div:nth-child(1) {
+            border: 2px dashed #ef939a;
+            padding: 10px;
+            margin-top: 3px;
+            display: grid;
+            font-weight: 400;
+
+            align-items: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        }
+
+
+        #sidebar>div:nth-child(1)>a {
+            text-decoration: none;
+            text-align: justify;
+            margin: 0px 2px 0px 2px;
+            color: #3c4858;
+            font-size: 0.875rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.01071em;
+
+        }
+
+
+        #sidebar>div:nth-child(1)>a>span {
+            color: #df1e2e;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.5px;
+
+        }
+
+        /* <------------------ css for sidebarmiddle ------------------> */
+
+        #midbar {
+         
+            padding: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding-left: 40px;
+
+        }
+
+        #midbar>h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color:#947575;
+           
+
+        }
+
+        #course {
+
+            height: 70px;
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 70px;
+            gap: 20px;
+
+
+        }
+
+        #course>div {
+           
+            display: flex;
+            justify-content: center;
+            border:1px solid #dddddd;
+            border-radius: 10px;
+
+
+        }
+
+
+
+        #course>div>a>img {
+            width: 90%;
+            height: 100%
+        }
+
+        #course>div>div {
+            margin-top: 18px;
+
+        }
+
+        #course>div>div>a {
+            text-decoration: none;
+            font-size: 15px;
+            margin-right: 20px;
+            color: #ba7a58
+        }
+
+
+        #internship {
+
+           
+            height: 70px;
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 70px;
+            gap: 20px;
+
+
+        }
+
+        #internship>div {
+          
+            display: flex;
+            justify-content: center;
+            border:1px solid #dddddd;
+            border-radius: 10px;
+
+        }
+
+
+
+        #internship>div>a>img {
+            width: 120%;
+            height: 100%
+        }
+
+        #internship>div>div {
+            margin-top: 18px;
+            margin-left: 28px;
+
+        }
+
+        #internship>div>div>a {
+            text-decoration: none;
+            font-size: 15px;
+            margin-right: 1px;
+            color: #ba7a58
+        }
+
+        #internship>div>div>a>span {
+            color: #212121;
+            font-weight: 700;
+            font-size: 12px;
+
+        }
+
+        #lowerbar {
+
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            margin-top: 20px;
+            
+        }
+
+        #lowerbar>a>h3 {
+
+            display: inline-block;
+            margin-left: 80px;
+            margin-top: 30px;
+            color:  #ba7a58;
+            font-weight: 700;
+            font-size: 13px;
+
+        }
+       
+
+        #lowerbar>a>h3:hover {
+        color:   #087cdd;
+        }
+       
+        #lowerbar>hr {
+
+            margin: 20px 20px 20px 20px;
+        }
+
+        #filter {
+
+
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            color: #b89882;
+        }
+
+
+        #sortby {
+
+            border: none;
+            border-bottom: 1px solid #b89882;
+            font-size: 16px;
+            width: 100px;
+        }
+
+        #show {
+
+            border: none;
+            border-bottom: 1px solid #b89882;
+            font-size: 16px;
+            width:80px;
+            margin-right: 20px;
+        }
+
+      
+      #resultbox{
+      
+        width:40%;
+        height:150px;
+        margin:auto;
+        margin-top: 40px;
+       
+
+       
+      }
+
+        #resultbox>img{
+           
+            width:30px;
+            height:30px;
+            display: block;
+            margin: auto;
+             
+          
+        }
+
+        #resultbox>p{
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #resultbox>a>button{
+          border: 1px solid #087cdd;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: white;
+            color: #087cdd;
+            font-weight: 700;
+            border-radius: 6px;
+        }
+
+        #resultbox>a{
+          
+          text-decoration: none;    
+      }
+
+      #bottom{
+        display: flex;
+        margin-left: 100px;
+        gap:30px;
+        margin-top: 30px;
+      }
+
+      #resultbox>a>button:hover{
+             background-color:#ecf5fc ;
+        }
+
+   
+           
+
+      
+       
+
+    </style>
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+    <div id="header">
+        <p>Please Click Here <a href="">VERIFY EMAIL</a>& Please Click Here <a href="">VERIFY NUMBER</a> </p>
+    </div>
+
+  <div id="bottom" >
+    <div id="profile">
+        <img src="https://assets.interntheory.com/creative/default-images/girlProfile.jpg" alt="image"><br>
+        <button><a href="">MY PROFILE</a></button>
+
+
+        <h4></h4>
+        <hr>
+        <h3></h3>
+        <h3></h3>
+    </div>
+
+    <div id="sidebar">
+
+        <div><a href="">Still in college and want to start a bussiness already? Become our affillate and Kickstart your
+                entrepreneurial journey. <span>Click here for details</span> </a></div>
+        <div id="midbar">
+            <h3>Recomendation Courses</h3>
+            <div id="course">
+                <div>
+                    <a href=""><img
+                            src="https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png"
+                            alt="img"></a>
+                    <div> <a href=""> Data Analytics With R Pro ...</a></div>
+                </div>
+                <div>
+                    <a href=""><img src="https://assets.interntheory.com/courses/banner/1573118304.png" alt="img"></a>
+                    <div> <a href=""> Offline Degital Marketing ...</a></div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png"
+                            alt="img"></a>
+                    <div> <a href=""> Android App Developmen ...</a></div>
+                </div>
+
+            </div>
+
+            <h3>Recommended internships</h3>
+            <div id="internship">
+
+                <div>
+                    <a href=""><img
+                            src="https://assets.interntheory.com/uploads/company/logos/bd53598e206c5cb87f4404c65667f288902bc474.jpg"
+                            alt="img"></a>
+                    <div> <a href="">Digital Marketing Interns <span>GOTMENOW SOFT SOLUTION</span> </a></div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://assets.interntheory.com/uploads/company/logos/684dd8e973f0eff7a685c74f0da1b92a3f308897.jpg"
+                            alt="img"></a>
+                    <div><a href=""> UI Design Intern <span>Rabbit Loader</span> </a></div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://assets.interntheory.com/uploads/company/logos/dfdca26fee0a32f763721a19adb4865c0cc2ed77.jpg"
+                            alt="img"></a>
+                    <div> <a href=""> Python internship <span>Pro Taxking Advisory Pv..</span> </a></div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <div id="lowerbar">
+
+            <a href="">
+                <h3>MY APPLICATION</h3>
+            </a>
+            <a href="">
+                <h3>MY COURSES</h3>
+            </a>
+
+            <hr>
+
+            <div id="filter">
+
+                <div id="sort1">
+                    <span>Sort By:</span> <select name="sort" id="sortby">
+                        <option value="Latest First">Latest First</option>
+                        <option value="Oldest First">Oldest First</option>
+                    </select>
+                </div>
+                <span>|</span>
+                <div id="sort2">
+                    <span>Show:</span> <select name="show" id="show">
+                        <option value="All">All</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Shot list">Short list</option>
+                        <option value="Rejected">Rejected</option>
+                        <option value="Rejected After Shortlist">Rejected After Shortlist</option>
+                        <option value="Hired">Hired</option>
+                        <option value="Join">Join</option>
+                    </select>
+                </div>
+
+
+            </div >
+
+              <div id="resultbox" >
+                <img src="https://www.accelerate.community/images/smile.png" alt="img">
+                <p>You dont have any hired applications</p>
+               <a href=""><button>KICKSTART YOUR CARRER NOW</button></a> 
+              </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+
+</html>
+
+<script>
+   
+
+
+    let logindata = JSON.parse(localStorage.getItem("loginData")) || [];
+
+
+    logindata.forEach(function (elem) {
+
+        let profile = document.querySelector("#profile>h4");
+        profile.innerHTML = elem.name;
+
+        let email = document.querySelector("#profile>h3");
+        email.innerHTML = elem.email
+
+
+
+        let number = document.querySelector("#profile>h3+h3");
+        number.innerHTML = elem.number;
+
+
+      
+
+    })
+
+    alert("signIn successfully")
+
+
+
+
+
+
+
+</script>

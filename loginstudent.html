@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="loginstudent.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
+    <link  href="register/">
+</head>
+
+<body>
+
+
+    <div id="login">
+
+        <div id="catagory">
+            <div>
+                <a href="loginstudent.html"><h4>STUDENT</h4></a>
+            </div>
+            <div>
+                <a href="logincompany.html"><h4>COMPANY</h4></a>
+            </div>
+        </div>
+
+        <h1>Login</h1>
+        <div id="mid-text">
+            <p>If you are a company looking to hire interns, please login as a company by clicking 
+                <span> <a href="logincompany.html"> here</a></span></p>           
+        </div>
+        <div id="facebook">
+            <div><a href="https://www.facebook.com/confirmemail.php?next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fencrypted_query_string%3DAeCFKq5vPuwbLHnK5P8lZFj_r42fEUAdf1fuk3tRnRd6LlqSEWhfPZDKUxMLBXmDdidLp0YLRC-tMlwpcH8iSQXGNqIu6LPq9YQ3t-T-waSoiQ1PZypO4019ugysVGZQRWq0TJBlpQnw19ca6pLvr4XDD00_9BhZrGelepBSNu3w-d_HxgyfXsIHbzqjz9CKOd7QF6vZfd34qruB4UrPNfy5knrdHHUbdPIPx1LiTQ8Wzk-3oCA8OIEycN7KMllaORlJ2DMlbTZ1f3VlZEoE7IzjqlKtE-aC8A""><i class="fa-brands fa-facebook"></i></a></div>
+                <div> <a href="https://www.facebook.com/confirmemail.php?next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fencrypted_query_string%3DAeCFKq5vPuwbLHnK5P8lZFj_r42fEUAdf1fuk3tRnRd6LlqSEWhfPZDKUxMLBXmDdidLp0YLRC-tMlwpcH8iSQXGNqIu6LPq9YQ3t-T-waSoiQ1PZypO4019ugysVGZQRWq0TJBlpQnw19ca6pLvr4XDD00_9BhZrGelepBSNu3w-d_HxgyfXsIHbzqjz9CKOd7QF6vZfd34qruB4UrPNfy5knrdHHUbdPIPx1LiTQ8Wzk-3oCA8OIEycN7KMllaORlJ2DMlbTZ1f3VlZEoE7IzjqlKtE-aC8A">SIGNIN WITH FACEBOOK</a> </div>
+            </div>
+        
+        <div id="google">
+            <div>
+              <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=309612518460-n4a9a9hlrg1u1feativb8pvt61v0do70.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Finterntheory.com%2Fapi%2Fgoogle%2Fcallback&scope=openid%20profile%20email&response_type=code&state=lT4RUWKWG7YMMZnae4q2yTsk1mqlXnVlrME3j6hR&flowName=GeneralOAuthFlow"><img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="image"></a>
+            </div>
+            <div> <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=309612518460-n4a9a9hlrg1u1feativb8pvt61v0do70.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Finterntheory.com%2Fapi%2Fgoogle%2Fcallback&scope=openid%20profile%20email&response_type=code&state=lT4RUWKWG7YMMZnae4q2yTsk1mqlXnVlrME3j6hR&flowName=GeneralOAuthFlow">SIGNIN WITH GOOGLE</a> </div>
+        </div>
+        
+        <p id="gap">OR</p>
+
+        <form id="form">
+
+            <input  type="text"   id="email" placeholder="Email/Number"  required="required">
+      
+            <br>
+
+
+            <input type="password" id="password"  placeholder="Password"   required="required" ><br>
+             
+            <div id="remember">  
+                   <input type="checkbox" name="rememberme" >Remember Me
+         
+                   <div><a href="forgotpassword.html">ForgotPassword?</a></div>
+            </div>
+                
+            <div id="create-account">
+                <p>Don't have an account? <span><a href="registerstudent.html">Create your account</a></span></p>
+            </div>
+
+            <input type="submit" id="submit" value="LOGIN">
+
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
+<script src="./loginstudent.js"></script>
