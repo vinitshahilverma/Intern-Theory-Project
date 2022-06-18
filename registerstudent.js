@@ -12,7 +12,7 @@ function myfunction(event){
         how:document.querySelector("#how").value,
         looking:document.querySelector("#looking").value,
     }
-    if(checkemails(studentdata.email)==true)
+    if(checkemails(studentdata.email,studentdata.number)==true)
     {
         userdata.push(studentdata)
         localStorage.setItem("userdata",JSON.stringify(userdata))
@@ -23,9 +23,10 @@ function myfunction(event){
      alert("Account Already Exists")
     }
 }
-function checkemails(email){
+function checkemails(email,number){
 let filtered =userdata.filter(function(el){
     return email==el.email 
+    return number==el.number
 })
 if(filtered.length>0)
 {
