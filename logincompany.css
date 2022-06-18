@@ -156,7 +156,7 @@ h1{
     height:40px;
  
     border:none;
-  
+    outline: none;
     border-bottom: 1px solid #949494;
     margin-top: 14px;
 }
@@ -171,11 +171,9 @@ h1{
     margin:auto;
     
     width:90%;
-    height:40px;
-    
+    height:40px; 
     border:none;
-    
-  
+   outline: none;
     border-bottom: 1px solid #949494;
     
 }
