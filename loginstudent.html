@@ -8,57 +8,128 @@
     <title>Log In Page</title>
     <link rel="stylesheet" href="loginstudent.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css ">
-  
+    <script src="https://kit.fontawesome.com/3e2211948f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
+   
+     <!-- ......navbar...... -->
+     <div id="navigation">
+        <div id="father">
+         <div>
+            <img src="https://assets.interntheory.com/creative/logo.png" alt="logo">
+         </div>
+         <div>
+            <a href="cart.html"><img src="https://t2.gstatic.com/images?q=tbn:ANd9GcTjrHlkYmgAQKRZr3tHn13CYNox3hay2bcb4dUP22cVVDfNaoXJ" alt="cart"></a>
+            <a href="loginstudent.html"><button>SIGN IN</button></a>
+            </div>
+         </div>
+        </div>
+    </div>
+    <!-- <----------------------------------------------------------------------->
+     <!-- .......sidebar.... -->
+     <label>
+        <input id="checkbox" type="checkbox">
+        <div id="toggle">
+            <span id="top_line" ></span>
+            <span id="mid_line" ></span>
+            <span id="bottom_line"></span>
+        </div>
+        <div id="warp">
+                <ul>
+                  <li><a href="homepage.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                  <li><a href="internship.html"><i class="fa-solid fa-list"></i>InternShips</a></li>
+                  <li><a href="job.html"><i class="fa-solid fa-bag-shopping"></i>Jobs</a></li>
+                  <li><a href="loginstudent.html"><i class="fa-solid fa-bars-staggered"></i>Post Internship</a></li>
+                  <li><a href="#" id="hide1"><i class="fa-solid fa-book-bookmark"></i>Courses<span class="fa-solid fa-angle-down"></span>
+                      <ul id="verma1" class="inbuilt">
+                          <li><a href="Online-Course.html" class="cour">Online Courses</a></li>
+                          <li><a href="#">Classroom Training</a></li>
+                      </ul>
+                  </a></li>
+                  <li><a href="contactus.html" ><i class="fa-solid fa-phone" ></i>contact Us</a></li>
+                  <li><a href="#" id="hide2"><i class="fa-solid fa-chart-simple"></i>Register<span class="fa-solid fa-angle-down"></span>
+                      <ul id="verma2" class="inbuilt">
+                          <li><a href="registercompany.html" class="cour">Company</a></li>
+                          <li><a href="registerstudent.html">Student</a></li>
+                      </ul>
+                  </a></li>
+                  <li><a href="#" id="hide3"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login<span class="fa-solid fa-angle-down"></span>
+                      <ul id="verma3" class="inbuilt">
+                          <li><a href="logincompany.html" class="cour">Company</a></li>
+                          <li><a href="loginstudent.html">Student</a></li>
+                        </ul>
+                    </a></li>
+                </ul>
+            </div> 
+        </label>   
+   
+   
+   
+   
+   
+   
+   
+   <!-- <--------------------------------------loginstudent html--------------------------------------------->
     <div id="login">
 
         <div id="catagory">
             <div>
-                <a href="loginstudent.html"><h4>STUDENT</h4></a>
+                <a href="loginstudent.html">
+                    <h4>STUDENT</h4>
+                </a>
             </div>
             <div>
-                <a href="logincompany.html"><h4>COMPANY</h4></a>
+                <a href="logincompany.html">
+                    <h4>COMPANY</h4>
+                </a>
             </div>
         </div>
 
         <h1>Login</h1>
         <div id="mid-text">
-            <p>If you are a company looking to hire interns, please login as a company by clicking 
-                <span> <a href="logincompany.html"> here</a></span></p>           
+            <p>If you are a company looking to hire interns, please login as a company by clicking
+                <span> <a href="logincompany.html"> here</a></span>
+            </p>
         </div>
         <div id="facebook">
-            <div><a href="https://www.facebook.com/confirmemail.php?next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fencrypted_query_string%3DAeCFKq5vPuwbLHnK5P8lZFj_r42fEUAdf1fuk3tRnRd6LlqSEWhfPZDKUxMLBXmDdidLp0YLRC-tMlwpcH8iSQXGNqIu6LPq9YQ3t-T-waSoiQ1PZypO4019ugysVGZQRWq0TJBlpQnw19ca6pLvr4XDD00_9BhZrGelepBSNu3w-d_HxgyfXsIHbzqjz9CKOd7QF6vZfd34qruB4UrPNfy5knrdHHUbdPIPx1LiTQ8Wzk-3oCA8OIEycN7KMllaORlJ2DMlbTZ1f3VlZEoE7IzjqlKtE-aC8A""><i class="fa-brands fa-facebook"></i></a></div>
-                <div> <a href="https://www.facebook.com/confirmemail.php?next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fencrypted_query_string%3DAeCFKq5vPuwbLHnK5P8lZFj_r42fEUAdf1fuk3tRnRd6LlqSEWhfPZDKUxMLBXmDdidLp0YLRC-tMlwpcH8iSQXGNqIu6LPq9YQ3t-T-waSoiQ1PZypO4019ugysVGZQRWq0TJBlpQnw19ca6pLvr4XDD00_9BhZrGelepBSNu3w-d_HxgyfXsIHbzqjz9CKOd7QF6vZfd34qruB4UrPNfy5knrdHHUbdPIPx1LiTQ8Wzk-3oCA8OIEycN7KMllaORlJ2DMlbTZ1f3VlZEoE7IzjqlKtE-aC8A">SIGNIN WITH FACEBOOK</a> </div>
-            </div>
-        
+            <div><a href="https://www.facebook.com/confirmemail.php?next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fencrypted_query_string%3DAeCFKq5vPuwbLHnK5P8lZFj_r42fEUAdf1fuk3tRnRd6LlqSEWhfPZDKUxMLBXmDdidLp0YLRC-tMlwpcH8iSQXGNqIu6LPq9YQ3t-T-waSoiQ1PZypO4019ugysVGZQRWq0TJBlpQnw19ca6pLvr4XDD00_9BhZrGelepBSNu3w-d_HxgyfXsIHbzqjz9CKOd7QF6vZfd34qruB4UrPNfy5knrdHHUbdPIPx1LiTQ8Wzk-3oCA8OIEycN7KMllaORlJ2DMlbTZ1f3VlZEoE7IzjqlKtE-aC8A""><i class="
+                    fa-brands fa-facebook"></i></a></div>
+            <div> <a
+                    href="https://www.facebook.com/confirmemail.php?next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fencrypted_query_string%3DAeCFKq5vPuwbLHnK5P8lZFj_r42fEUAdf1fuk3tRnRd6LlqSEWhfPZDKUxMLBXmDdidLp0YLRC-tMlwpcH8iSQXGNqIu6LPq9YQ3t-T-waSoiQ1PZypO4019ugysVGZQRWq0TJBlpQnw19ca6pLvr4XDD00_9BhZrGelepBSNu3w-d_HxgyfXsIHbzqjz9CKOd7QF6vZfd34qruB4UrPNfy5knrdHHUbdPIPx1LiTQ8Wzk-3oCA8OIEycN7KMllaORlJ2DMlbTZ1f3VlZEoE7IzjqlKtE-aC8A">SIGNIN
+                    WITH FACEBOOK</a> </div>
+        </div>
+
         <div id="google">
             <div>
-              <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=309612518460-n4a9a9hlrg1u1feativb8pvt61v0do70.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Finterntheory.com%2Fapi%2Fgoogle%2Fcallback&scope=openid%20profile%20email&response_type=code&state=lT4RUWKWG7YMMZnae4q2yTsk1mqlXnVlrME3j6hR&flowName=GeneralOAuthFlow"><img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="image"></a>
+                <a
+                    href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=309612518460-n4a9a9hlrg1u1feativb8pvt61v0do70.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Finterntheory.com%2Fapi%2Fgoogle%2Fcallback&scope=openid%20profile%20email&response_type=code&state=lT4RUWKWG7YMMZnae4q2yTsk1mqlXnVlrME3j6hR&flowName=GeneralOAuthFlow"><img
+                        src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="image"></a>
             </div>
-            <div> <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=309612518460-n4a9a9hlrg1u1feativb8pvt61v0do70.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Finterntheory.com%2Fapi%2Fgoogle%2Fcallback&scope=openid%20profile%20email&response_type=code&state=lT4RUWKWG7YMMZnae4q2yTsk1mqlXnVlrME3j6hR&flowName=GeneralOAuthFlow">SIGNIN WITH GOOGLE</a> </div>
+            <div> <a
+                    href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=309612518460-n4a9a9hlrg1u1feativb8pvt61v0do70.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Finterntheory.com%2Fapi%2Fgoogle%2Fcallback&scope=openid%20profile%20email&response_type=code&state=lT4RUWKWG7YMMZnae4q2yTsk1mqlXnVlrME3j6hR&flowName=GeneralOAuthFlow">SIGNIN
+                    WITH GOOGLE</a> </div>
         </div>
-        
+
         <p id="gap">OR</p>
 
         <form id="form">
 
-            <input  type="text"   id="email" placeholder="Email/Number"  required="required">
-      
+            <input type="text" id="email" placeholder="Email/Number" required="required">
+
             <br>
 
 
-            <input type="password" id="password"  placeholder="Password"   required="required" ><br>
-             
-            <div id="remember">  
-                   <input type="checkbox" name="rememberme" >Remember Me
-         
-                   <div><a href="forgotpassword.html">ForgotPassword?</a></div>
+            <input type="password" id="password" placeholder="Password" required="required"><br>
+
+            <div id="remember">
+                <input type="checkbox" name="rememberme">Remember Me
+
+                <div><a href="forgotpassword.html">ForgotPassword?</a></div>
             </div>
-                
+
             <div id="create-account">
                 <p>Don't have an account? <span><a href="registerstudent.html">Create your account</a></span></p>
             </div>
@@ -69,6 +140,95 @@
         </form>
 
     </div>
+
+    <!-- <-------------------------footer---------------------- <a id="facebook"><i class="fa-brands fa-facebook-square"></i></a> -->
+
+    <div id="footer">
+        <div id="insideFooter">
+           <div>
+              <div>
+                 <a href="https://www.facebook.com/interntheory"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqBZtvri3gY6yZyRDmjC8VA7QtJhZzVTbuTA&usqp=CAU" alt="facebook"></a> 
+              </div>
+              <div>
+                  <a href="https://www.linkedin.com/company/interntheory"><img src="data:image/png;base64,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" alt="linkdin"></a>
+              </div>
+              <div>
+                 <a href="https://twitter.com/InternTheory"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_gZjVSq5-da3Q8GKu63xygqQ6E6Dp2hqldg&usqp=CAU" alt="twitter"></a> 
+              </div>
+              <div>
+                 <a href="https://www.instagram.com/interntheory/"><img src="data:image/png;base64,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" alt="instagram"></a> 
+              </div>
+           </div>
+           <div id="table">
+              <div id="tchild1">
+                  <table>
+                      <thead>
+                          <tr>
+                              <td>BY PLACE</td>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr><td><a href="Internships-In-Mumbai.html">Internships In Mumbai</a></td></tr>
+                          <tr><td><a href="Internships-In-Delhi.html">Internships In Delhi</a></td></tr>
+                          <tr><td><a href="Internships-In-Bangalore.html">Internships In Bangalore</a></td></tr>
+                          <tr><td><a href="Internships-In-Pune.html">Internships In Pune</a></td></tr>
+                          <tr><td><a href="Internships-In-Hyderabad.html">Internships In Hyderabad</a></td></tr>
+                      </tbody>
+                  </table>
+                  </div>
+                  <div id="tchild2">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <td>BY PROFILE</td>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr><td><a href="Marketing-Internships.html">Marketing Internships</a></td></tr>
+                              <tr><td><a href="Business-Development-Internships.html">Business Development Internships</a></td></tr>
+                              <tr><td><a href="Content-Writing-Internships.html">Content Writing Internships</a></td></tr>
+                              <tr><td><a href="Graphic-Designing-Internships.html">Graphic Designing Internships</a></td></tr>
+                              <tr><td><a href="HR-Internships.html">HR Internships</a></td></tr>
+                              <tr><td><a href="Engineering-Internships.html">Engineering Internships</a></td></tr>
+                          </tbody>
+                      </table>
+                      </div>
+                      <div id="tchild3">
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <td>BY TYPE</td>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr><td><a href="Full-Time-Internships.html">Full Time Internships</a></td></tr>
+                                  <tr><td><a href="Part-Time-Internships.html">Part Time Internships</a></td></tr>
+                                  <tr><td><a href="Work-From-Home-Internships.html">Work From Home Internships</a></td></tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+              <div id="bottom">
+                  <div id="bchild1">
+                      <div><p>REFUND & CANCELLATION POLICY</p></div>
+                      <div><p>COURSES</p></div>
+                      <div><p>TERMS AND CONDITIONS</p></div>
+                      <div><p>PRIVACY POLICY</p></div>
+                      <div><p>CONTACT US</p></div>
+                      <div><p>ABOUT US</p></div>
+                      <div><p>SITEMAP</p></div>
+                  </div>
+                  <div id="bchild2">
+                      <div><p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p></div>
+                  </div>
+              </div>
+           </div>
+        </div>
+  </div>
+
+
+
 
 
 </body>

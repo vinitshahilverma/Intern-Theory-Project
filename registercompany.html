@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="https://kit.fontawesome.com/5042d3828c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="registercompany.css">
 </head>
 <body>
@@ -42,19 +42,24 @@
         <div>
             <div>
                 <h2>Start Hiring Interns</h2>
-                <h3>Already have an account?<a href="">Sign in</a></h3>
+                <h3>Already have an account?<a href="logincompany.html">Sign in</a></h3>
                 <p>If you are a student looking for internships, please register as a student by clicking <a href="">here</a> </p>
+                <div id="facebook">
+                    <div><h4>REGISTER WITH LINKEDIN </h4></div>
+                    </div>
+                    <i class='fa fa-facebook-square' style='color: white' ></i>
+                    <p id="gap" style="border: none ; text-align: center; margin-bottom: 10px; margin-top: 10px;" >OR</p>
                 <form>
                     
-        <input type="text" id="name" placeholder="Your Name"/><br />
+        <input type="text" id="name" required placeholder="Your Name"/><br />
         
-        <input type="text" id="companyname" placeholder="Company Name"/><br />
+        <input type="text" id="companyname" required placeholder="Company Name"/><br />
        
-        <input type="number" id="mobile" placeholder="Mobile number"/><br />
+        <input type="number" id="mobile" required placeholder="Mobile number"/><br />
        
-        <input type="email" id="email" placeholder="Email(Corporate email only)"/><br />
+        <input type="email" id="email" required placeholder="Email(Corporate email only)"/><br />
         
-        <input type="password" id="password" placeholder="password"/><br />
+        <input type="password" id="password" required placeholder="password"/><br />
         
         <select id="how">
             <option value="">How did you find us?</option>

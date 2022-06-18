@@ -11,5 +11,7 @@ function myfunction(event){
     how:document.querySelector("#how").value
    }
    companydata.push(data)
-   console.log(companydata)
+   localStorage.setItem("companydata",JSON.stringify(companydata))
+   alert("Registration successfull proceed to login page")
+   window.location.href="logincompany.html"
 }
