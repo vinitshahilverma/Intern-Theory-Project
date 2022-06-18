@@ -156,6 +156,93 @@
         
         }
         /* <-------------------------------------------------------------------------> */
+         /* <================================================form-div=================================> */
+    .dropdown-check-list {
+    display: inline-block;
+  }
+  
+  .dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px 5px 30px ;
+    border: none;
+    border-bottom: 1px solid;
+    width:350px;
+    font-size: 16px;
+  }
+  .dropdown-check-list .prefers {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px 5px 30px ;
+    border: none;
+    border-bottom: 1px solid;
+    width:350px;
+    font-size: 16px;
+  }
+  
+  .dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: white;
+    width:350px;
+    position: fixed;
+    top: 130px;
+    z-index: 2px;
+  }
+  
+  .dropdown-check-list ul.items li {
+    list-style: none;
+    font-size:14px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+  }
+  
+  .dropdown-check-list.visible .anchor {
+    color: #0094ff;
+  }
+  
+  .dropdown-check-list.visible .items {
+    display: block;
+  }
+  #form-div{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    position: sticky;
+    top:64px;
+    background-color:white;
+    margin-top:0px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    z-index: 1;
+  }
+  input+button{
+    background-color:#087cdd;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    width:100px;
+    color: white;
+    font-weight: 520;
+    font-size: 14px;
+  }
+ #Shl3{
+    width:300px;
+    height:30px;
+    border: none;
+    border-bottom:1px solid;
+    font-size: 16px;
+    background-color:#f8f8f8;
+ }
          /* <-------------------footer------------------->    */
       #footer{
         width:100%;
@@ -250,11 +337,11 @@
         height:295.66px;
         margin-left: 150px;
         margin-right: 20px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     
     }
     #father1{
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         width:60%;
         height:auto;
     }
@@ -361,6 +448,12 @@
             height:80px;
         }
      }
+       /* <================================================media for form-div=================================> */
+ @media all and (min-width:300px) and (max-width:1024px) {
+    #form-div{
+        display: none;
+    }
+ }
 </style>
 </head>
 <body>
@@ -414,7 +507,49 @@
                 </ul>
             </div> 
         </label>   
-    
+     <!-- /* <================================================form-div=================================> */ -->
+   <div  id="form-div">
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+        <input type="text"  class="anchor" placeholder="Cities..."/>
+        <ul class="items">
+          <li><input type="checkbox" />Delhi</li>
+          <li><input type="checkbox" />Bangalore</li>
+          <li><input type="checkbox" /> Pune</li>
+          <li><input type="checkbox" />Hyderabad</li>
+          <li><input type="checkbox" />Mumbai</li>
+          <li><input type="checkbox" />Nagaland</li>
+          <li><input type="checkbox" />Chandigarh</li>
+          <li><input type="checkbox" />Shrinagar</li>
+          <li><input type="checkbox" />Vishakapattan</li>
+          <li><input type="checkbox" />Mysore</li>
+        </ul>
+      </div>
+      <div id="list3" class="dropdown-check-list" tabindex="100">
+        <input type="text" id="Shl2" class="prefers" placeholder="preferences..."/>
+        <ul class="items">
+          <li><input type="checkbox" />Admin </li>
+          <li><input type="checkbox" />Animation</li>
+          <li><input type="checkbox" /> Advertising</li>
+          <li><input type="checkbox" />Acturial Science</li>
+          <li><input type="checkbox" />App design and development</li>
+          <li><input type="checkbox" />Architecture</li>
+          <li><input type="checkbox" />Biotech</li>
+          <li><input type="checkbox" />Branding</li>
+          <li><input type="checkbox" />Business</li>
+          <li><input type="checkbox" />Consulting</li>
+          <li><input type="checkbox" />Client Servicing</li>
+          <li><input type="checkbox" />Content Writing</li>
+          <li><input type="checkbox" />Digital Marketing</li>
+        </ul>
+      </div>
+      <p style="font-size:14px">OR</p>
+      <div id="Shl1">
+        <input type="text" placeholder="Search..." id="Shl3">
+        <button>SEARCH</button>
+      </div>
+   </div> 
+</div>
+<!-- /* <==========================================================================================================> */ -->
     <!-- ..................... -->
     <div id="grandfather">
         <img src="https://assets.interntheory.com/creative/Internship_left_course_add_01.png" alt="error">
@@ -722,4 +857,23 @@
         if(count2%2!==0){document.querySelector("#verma3").style.display="inline"}
         else{document.querySelector("#verma3").style.display="none"}
     }
+
+    //   <!-- /* <================================================form-div=================================> */ -->
+    var checkList = document.getElementById('list1');
+checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+  if (checkList.classList.contains('visible'))
+    checkList.classList.remove('visible');
+  else
+    checkList.classList.add('visible');
+}
+
+var checkList3 = document.getElementById('list3');
+checkList3.getElementsByClassName('prefers')[0].onclick = function(evt) {
+  if (checkList3.classList.contains('visible'))
+    checkList3.classList.remove('visible');
+  else
+    checkList3.classList.add('visible');
+}
+
+ /* <==========================================================================================================> */ 
 </script>
