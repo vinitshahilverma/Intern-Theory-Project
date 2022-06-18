@@ -4,17 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart page</title>
+    <title>Pay-Via</title>
     <script src="https://kit.fontawesome.com/3e2211948f.js" crossorigin="anonymous"></script>
     <style>
-        *{
-            font-family: "Roboto",Arial, Helvetica, sans-serif;
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-         
-        }
-        #tag{
+           #tag{
       background-color: red;
     color: white;
     text-align: center;
@@ -25,59 +18,23 @@
     color: white;
     border: 0px;
     }
-        #master{
-              display: grid;
-              grid-template-columns: repeat(2,1fr);
-              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-           width: 80%;
-           height: 350px;
-           margin: auto;
-           margin-top: 30px;
-            }
-          
-       #but1{
-         background-color: #087CDD;
-         border: none;
-         color: white;
-         padding: 5px 5px;
-        border-radius: 5px;
-        margin-bottom: -20px;
-        text-decoration: none;
-            }
-            #but2{
-   background-color: red;
-   padding: 10px 10px;
-   color: white;
-   border: 0px;
-   border-radius: 3px;
-   padding: 5px 5px;
-            }
-        
-            #but3{
-   background-color: red;
-   padding: 10px 10px;
-   color: white;
-   border: 0px;
-   border-radius: 5px;
-   width: 100%;
- 
-   text-decoration: none;
-            }
-            h4{
-                text-align: center;
-                margin-top: 20px;
-        
-            }
-            h1{
-                text-align: center;
-            }
-            #sec2{
-                border: transparent;
-                margin-top: 50px;
-                margin-right: 10%;
-             }
+        .deco{
+            color: #087CDD;
+            text-align: center;
+            padding: 5px;
+            width: 85%;
+            margin-left: 5%;
             
-             /*------------------------------ ------navbar-------------------------------------- */
+        }
+        #head{
+            width: 30%;
+            margin: auto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           margin-top: 10px;
+           height: 300px;
+    
+        }
+                /*------------------------------ ------navbar-------------------------------------- */
       #navigation{
             display:flex;
             width:100%;
@@ -215,7 +172,7 @@
             right:30px;
         
         }
-              /* <-------------------footer------------------->    */
+            /* <-------------------footer------------------->    */
       #footer{
         width:100%;
         height:341.75px;
@@ -311,13 +268,9 @@
             height:80px;
         }
      }
-     .false{
-        margin-left:  350px;
-      
-     }
-</style>
+
+    </style>
 </head>
-<body>
 <body>
      <!-- ......navbar...... -->
    <div id="navigation">
@@ -375,59 +328,30 @@
       VERIFY EMAIL</button> & Click Here to <button id="but" onclick="alert('An OTP has been sent to your mobile phone. Please key in the OTP to verify your mobile.')">VERIFY NUMBER </button>
    </p>
   </div>
-    
-    <div id="master">
-    <div id="sec1">
-        <h2 style="margin-left: 10px; color: rgb(149, 144, 144);" >cart</h2>
-        <div style="display: flex;">
-            <img style="width: 100px; height:100px; margin-left:20px " src="https://assets.interntheory.com/creative/courses/thumbnails/it.jpg" alt="">
-            <h4 style="margin-left: 5px;">IT Starter Pack (4 Courses)</h4>
-        </div>
-
-        <span class="round" style="font-size: 1.1rem;
-font-weight: 700;
-margin-right: 40px;
-float: right;
- padding-left: 3px;
-letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
-<span class="round" style=" 
-text-decoration: line-through;
-margin-right: 20px;
-float: right;
-font-weight: 400;
-color: rgba(0, 0, 0, 0.54);">₹ 32999 </span>
-<br>
-<hr style="border: 0.5px dashed; color: grey; ">
-       
-  <h4><a href="Online-Course.html" role="button" id="but1" >CHECKOUT OUR COURSES</a></h4>
+   <div id="head">
+    <h3>Pay Via</h3>
+   
+   <div class="deco">
+    <input type="text" class="deco" value="CREDIT CARD">
+   </div>
+   <div class="deco">
+    <input type="text" class="deco" value="DEBIT CARD">
+   </div>
+   <div class="deco">
+    <input type="text" class="deco" value="NETBANKING CARD">
+   </div>
+   <div class="deco">
+    <input type="text"class="deco" value="PAYTM CARD">
+   </div>
+   <div class="deco">
+    <input type="text" class="deco" value="UPI CARD">
+   </div>
+   <div class="deco">
+    <input type="text" class="deco" value=" EMI(CREDIT CARD)">
+   </div>
 </div>
-    <div id="sec2">
-        <form>
-            <label style="font-size: 14px; color: grey;">Amount</label> 
-            <input type="text" class="false" placeholder="AMOUNT" value="₹ 15999">
-            <hr>
-            <label style="font-size: 14px; color: grey;">CGST 9%</label> 
-            <input type="text" class="false" placeholder="CGST 9%" value="₹ 1440">
-            <hr>
-            <label style="font-size: 14px; color: grey;">SGST 9%</label> 
-            <input type="text" class="false" placeholder="SGST 9%" value="₹ 1440">
-         <hr>
-         <!-- <label style="font-size: 14px; font-weight: bold;" class="false">Total</label> 
-        <input type="text" value="₹ 18879"> -->
-        <label style="font-size: 14px; font-weight: bold;">Total</label> 
-        <input type="text" class="false" placeholder="SGST 9%" value="₹ 18879">
-      <br><br><br>
-      <input type="text" placeholder="Coupon Code">
-      <button id="but2">Go</button>
-      <br>
-      <h4><a href="PayVia.html" role="button" id="but3" >CHECKOUT</a></h4>
-        </form>
-    </div>
-</div>
+<!-- --------footer-------------- -->
 
-
-
- <!-- <-------------------------footer---------------------- <a id="facebook"><i class="fa-brands fa-facebook-square"></i></a> -->
 
  <div id="footer">
     <div id="insideFooter">
