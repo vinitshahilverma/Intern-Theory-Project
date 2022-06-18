@@ -2,6 +2,16 @@
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
+   font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+#container>div:nth-child(2){
+  background: url("https://assets.interntheory.com/creative/Web-Banner.jpg");
+
+}
+#container>div:nth-child(1)
+{
+   background: url("https://assets.interntheory.com/creative/Web-Banner.jpg");
+ 
 }
 
 
@@ -11,11 +21,14 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: grid;
   justify-content: flex-start;
-  position: sticky;
-  top: 500px;
-  left: 5px;
+  align-content: flex-start;
+  position: static;
+  z-index: 1000;
+  top: 0px;
+  left: 50%;
   margin-top: 5px;
-
+  padding: 20px;
+  background-color: white;
 
 }
 #container>div:nth-child(2)>div>h2{
@@ -23,7 +36,7 @@
    text-align: left;
 }
 #container>div:nth-child(2)>div>h3{
-   margin-top: px;
+  
    text-align: left;
 }
 #container>div:nth-child(2)>div>p{
@@ -41,16 +54,16 @@ a{
 }
 #container{
    width: 100%;
-   border: 1px solid black;
+   border: transparent;
   
    display: grid;
    grid-template-columns: repeat(2,1fr);
    grid-template-rows: repeat(3,auto);
    
 }
-#container>div{
+/* #container>div{
    border: 1px solid
-}
+} */
 input[type="text"],input[type="number"],input[type="email"],input[type="password"],input[type="Submit"],select
    {
    display: block;
@@ -61,6 +74,15 @@ input[type="text"],input[type="number"],input[type="email"],input[type="password
    font-size: 16px;
    outline: none;
   
+}
+input[type="Submit"]{
+   border: 0.5px solid red;
+   color: #DF1E2E;
+   width: auto;
+   font-size: 14px;
+   align-content: center;
+   padding: 5px;
+   margin: auto;
 }
 #container>div>div{
  
@@ -80,7 +102,10 @@ input[type="text"],input[type="number"],input[type="email"],input[type="password
    text-align: center;
    
 }
-
+h3{
+   color:#999999;
+   font-weight: 100;
+}
 
 #container>div:nth-child(5)>div>div>div{
    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -88,6 +113,14 @@ input[type="text"],input[type="number"],input[type="email"],input[type="password
 #container>div:nth-child(5)>div>div{
    align-items: center;
    justify-content: center;
+   background-color: white;
+}
+#container>div:nth-child(5){
+   background-color: #EEEEEE;
+}
+#container>div:nth-child(6)
+{
+   background-color: #EEEEEE;
 }
 p+div{
   
@@ -112,7 +145,7 @@ span{
     color: #DF1E2E;
 }
 #help{
-   border: 1px solid black;
+   
    width: 100%;
    height: 700px;
    text-align: center;
@@ -126,10 +159,6 @@ span{
   margin: auto;
   width: 70%;
   margin-top: 20px;
-}
-#help>div>div{
-  
-
 }
 #icons{
   
@@ -158,8 +187,8 @@ span{
 }
 i{
    position: relative;
-   bottom: 30px;
-   left: 10px;
+ 
+   
    
 }
 h4{
@@ -175,8 +204,14 @@ h4{
    #icons{
       display: none;
    }
+   #container>div:nth-child(2){
+      display: flex;
+      align-items: center;
+   }
    #container>div:nth-child(2)>div{
       width: 350px;
+      margin: auto;
+
    }
    #container>div:nth-child(1)>div{
       
@@ -193,10 +228,12 @@ h4{
    }
    #container>div:nth-child(2)>div{
       width: 350px;
+      margin-right: 40px;
+
    }
    #container{
       width: 100%;
-     border: 1px solid black;
+    
     
      display: grid;
      grid-template-columns: repeat(1,1fr);
@@ -214,7 +251,7 @@ h4{
      
      display: grid;
      grid-template-columns: repeat(1,1fr);
-     grid-template-rows: repeat(3,250px);
+     grid-template-rows: repeat(3,300px);
      margin: auto;
      width: 70%;
      
