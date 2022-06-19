@@ -36,6 +36,7 @@ signUpStudent.forEach(function (elem) {
 })
 if (fleg == true) {  
     window.location.href="profilepage.html"
+    alert("Login Successfully")
 }
 
 
