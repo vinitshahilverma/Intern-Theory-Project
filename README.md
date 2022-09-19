@@ -61,8 +61,8 @@ We had to make a replica CoSchedule website. They have completely transformed th
 - Shahil Varma
 - Priyanshu Kaushik
 - Nitesh Kumar
+- Akshata Jinagond
 - Meenakshi
-- Aksheta 
 
 # Learnings -
 
